@@ -1,0 +1,79 @@
+.header 
+  display: flex
+  align-items: center
+  width: 100% 
+  height: 110px
+  background-color: #5e5dff
+  &__list 
+    padding: 0 25px
+    width: 100%
+    max-height: 80px
+    display: flex 
+    justify-content: space-between
+    align-items: center
+    list-style: none
+    &__phone 
+      padding-top: 10px
+      color: $light 
+      font-size: 20px 
+      text-decoration: none
+      transition: .3s
+      &:hover 
+        transform: scale(1.2)
+    &__info 
+      display: flex 
+      flex-direction: column
+    &__language
+      color: $light
+      &__active 
+        border-bottom: 1px solid $light
+      &__ru, &__ua 
+        cursor: pointer
+        transition: .4s
+        &:hover 
+          border-bottom: 1px solid $light
+    &__description
+      display: flex 
+      justify-content: space-between 
+      width: 500px
+      &__text 
+        color: $light 
+        font-size: 20px
+        width: 150px
+        &--big 
+          font-size: 40px
+    &__item 
+      display: flex 
+      align-items: center
+    &__menu 
+      &__text 
+        cursor: pointer
+        color: $light
+        text-transform: uppercase
+        margin-left: 10px 
+        margin-right: 20px
+      &__button 
+        cursor: pointer
+        position: relative
+        width: 12px 
+        height: 2px 
+        background-color: $light
+        &::before 
+          content: ''
+          position: absolute
+          top: 5px 
+          left: -2px
+          width: 16px 
+          height: 2px 
+          background-color: $light
+        &::after 
+          content: ''
+          position: absolute
+          top: -5px 
+          left: -2px
+          width: 16px 
+          height: 2px 
+          background-color: $light
+  &__logo 
+    &__image
+      max-height: 80px
