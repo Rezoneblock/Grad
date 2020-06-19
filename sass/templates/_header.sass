@@ -1,0 +1,317 @@
+.header
+  z-index: -1
+  height: 830px
+  background: url('../img/header-bg.png') center no-repeat
+  &-bottom 
+    position: relative 
+    &__slider 
+      margin-top: -60px
+      display: flex
+      justify-content: space-between
+    &__content 
+      display: none
+    &__proposal 
+      min-width: 220px 
+      max-width: 220px
+      margin-top: 61px !important 
+      margin-left: 31px !important
+      &__swipe 
+        display: flex 
+        margin-top: 39px
+        align-items: center
+        &__text
+          transition: .4s
+          margin-left: 16px
+          font-family: 'Muller Light'
+          font-size: 15px
+          color: #909090
+          text-decoration: none
+        &__bullet 
+          transition: .4s
+          min-width: 8px 
+          min-height: 8px 
+          border-radius: 50%
+          background-color: #ddddde
+          &--active 
+            min-width: 12px !important
+            min-height: 12px !important
+            background-color: #f6db24
+          &:first-of-type
+            margin-right: 8px
+      &__text 
+        color: #636363 
+        line-height: 24px
+        font-size: 18px
+        font-family: 'Muller Light'
+        &--bold 
+          font-family: 'Muller Bold' !important
+    &__card 
+      transition: .4s
+      min-width: 250px 
+      height: 330px 
+      text-align: center 
+      &:nth-of-type(1)
+        background: url('../img/header-card-1.png') 0px no-repeat
+      &:nth-of-type(2)
+        background: url('../img/header-card-2.png') 0px no-repeat
+      &:nth-of-type(3)
+        background: url('../img/header-card-3.png') 0px no-repeat
+      &__text
+        margin-left: 55px
+        margin-top: 100px
+        font-family: 'Muller Light'
+        font-size: 13px
+        line-height: 19px
+        max-width: 150px 
+        text-transform: uppercase
+        &--bold 
+          font-family: 'Muller Bold' !important
+  &-main 
+    position: relative
+    &__proposal2
+      display: none
+      max-width: 320px 
+      margin-top: 40px
+      text-align: center
+      &__swipe 
+        display: none
+        justify-content: center
+        align-items: center
+        &__text
+          transition: .4s
+          margin-left: 16px
+          font-family: 'Muller Light'
+          font-size: 15px
+          color: #909090
+          text-decoration: none
+        &__bullet 
+          transition: .4s
+          width: 8px 
+          height: 8px
+          border-radius: 50%
+          background-color: #ddddde
+          &--active 
+            min-width: 12px !important
+            min-height: 12px !important
+            background-color: #f6db24
+          &:nth-of-type(2)
+            margin: 0 8px
+      &__text
+        text-align: center
+        transition: .4s
+        font-family: 'Muller Light'
+        font-size: 17px
+        color: #909090
+        text-decoration: none
+        &--bold 
+          font-family: 'Muller Bold' !important
+    &__map
+      transition: .4s
+      position: absolute
+      top: -35px
+      right: -75px
+      &__image2
+        display: none
+      &__title 
+        position: absolute 
+        top: 25px
+        right: 210px
+        max-width: 150px
+        text-align: left
+      &__text 
+        font-family: 'Muller Light'
+        font-size: 15px
+        line-height: 18px
+    &__proposal
+      position: absolute 
+      top: 12px
+      line-height: 22px
+      left: 324px
+      max-width: 350px
+      font-size: 19px
+      &__text 
+        font-family: 'Muller Light'
+        &--bold 
+          font-family: 'Muller Bold' !important
+    &__card
+      position: absolute
+      width: 280px 
+      height: 330px
+      text-align: center
+      &__text 
+        margin-left: 55px
+        margin-top: 100px
+        font-family: 'Muller Light'
+        font-size: 13px
+        line-height: 19px
+        max-width: 150px 
+        text-transform: uppercase
+        &--bold 
+          font-family: 'Muller Bold' !important
+      &:nth-of-type(5)
+        background: url('../img/header-card-3.png') 0px no-repeat !important
+        right: -40px
+        bottom: -100px
+      &:nth-of-type(3)
+        background: url('../img/header-card-1.png') 0px no-repeat !important
+        bottom: 22px
+        left: 380px
+      &:nth-of-type(4)
+        background: url('../img/header-card-2.png') 0px no-repeat !important
+        bottom: 130px
+        left: 560px
+        z-index: 9
+    &__button
+      transition: .4s
+      padding-left: 20px
+      padding-top: 50px
+      &__btn
+        cursor: pointer
+        padding: 28px 28px
+        border-radius: 10px
+        border: none
+        font-size: 15.2px
+        line-height: 20px
+        font-family: 'Muller Light'
+        color: $light !important
+        text-transform: uppercase
+        background: linear-gradient( 0deg, rgb(255,0,36) -20%, rgb(255,133,113) 100%)
+        box-shadow: 0px 4px 0px 0px rgba(236, 37, 0, 0.004),
+        inset 0px -3px 4px 0px rgba(249, 71, 81, 0.004)
+        &--bold 
+          font-family: 'Muller Bold' !important
+    &__list
+      transition: .4s
+      padding-top: 24px
+      padding-left: 22px
+      display: flex 
+      flex-direction: column 
+      list-style: none
+      &__text 
+        font-size: 19px
+        line-height: 22px
+        &--bold 
+          font-family: 'Muller Medium' !important
+        &:first-of-type
+          margin-top: -1px
+      &__bullet
+        max-width: 9px 
+        max-height: 9px
+        margin-right: 14px
+      &__item 
+        display: flex
+        align-items: center
+        margin-bottom: 25px
+        &:last-of-type
+          margin-bottom: 0
+        &:first-of-type
+          align-items: center
+    &__title 
+      transition: .4s
+      margin-top: 100px
+      text-align: left
+      font-size: 50px 
+      line-height: 69px
+      letter-spacing: 1.6px
+      color: $light
+      text-transform: uppercase
+      font-weight: normal
+      font-family: 'Muller Light'
+      &--bold 
+        font-family: 'Muller Medium'
+  &-top 
+    height: 60px
+    &__list 
+      padding-top: 23px
+      display: flex 
+      justify-content: space-between
+      list-style: none
+      &__burger-menu
+        cursor: pointer
+        display: flex
+        justify-content: center 
+        align-items: center
+        max-width: 28px 
+        max-height: 22px
+        &__line 
+          position: relative
+          width: 26px 
+          height: 2px
+          background-color: #222532
+          &::after, &::before 
+            position: absolute
+            content: ''
+            width: 26px 
+            height: 2px
+            background-color: #222532
+          &::after 
+            top: 8px 
+          &::before  
+            top: -8px 
+      &__phone
+        margin-top: 10px
+        &__title
+          max-width: 200px
+          text-align: right
+          &__text
+            font-family: 'Muller Light'
+            font-size: 14px
+            color: $gray !important
+            &--bold 
+              font-family: 'Muller Medium'
+              color: $gray !important
+        &__link
+          font-size: 25px
+          text-decoration: none
+      &__logo 
+        display: flex
+        &-image
+        &__title 
+          margin-top: auto
+          font-weight: 300 
+          font-size: 16px 
+          color: $gray !important
+          max-width: 190px
+          line-height: 20px
+          margin-left: 28px
+      &__item
+        &-burger-menu 
+          margin-left: 7px
+          margin-top: 16px
+          display: none
+        &-mobilePhone
+          margin-top: 10px
+          align-items: center 
+          justify-content: center
+          max-width: 37px 
+          max-height: 37px
+          display: none
+        &-pdf
+          display: flex 
+        &-phone
+          margin-right: 34px
+      &__pdf 
+        margin-top: 18px
+        &-title 
+          margin-left: 20px
+          max-width: 237px
+          margin-top: 18px
+          &__text
+            margin-top: 4px
+            vertical-align: middle 
+            font-size: 17px
+            font-family: 'Muller Light'
+            &--bold 
+              font-family: 'Muller Medium'
+        &-icon 
+          display: flex 
+          flex-direction: column
+          max-width: 32px
+        &-size 
+          text-align: center
+          margin-top: 5px
+          font-size: 9px
+          text-transform: uppercase
+          font-family: 'Muller Light'
+#hidden-card
+  display: none

@@ -1,17 +1,29 @@
 @font-face {
-  font-family: 'Intro Book';
+  font-family: 'Muller Medium';
   src:
-    url('../fonts/IntroBook.woff') format('woff'),
-    url('../fonts/IntroBook.woff2') format('woff2');
+    url('../fonts/MullerMedium.woff') format('woff'),
+    url('../fonts/MullerMedium.woff2') format('woff2'),
+    url('../fonts/MullerMedium.otf') format('otf');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Intro Bold';
+  font-family: 'Muller Light';
   src:
-    url('../fonts/IntroBold.woff') format('woff'),
-    url('../fonts/IntroBold.woff2') format('woff2');
+    url('../fonts/MullerLight.woff') format('woff'),
+    url('../fonts/MullerLight.woff2') format('woff2'),
+    url('../fonts/MullerLight.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Muller Bold';
+  src:
+    url('../fonts/MullerBold.woff') format('woff'),
+    url('../fonts/MullerBold.woff2') format('woff2'),
+    url('../fonts/MullerBold.otf') format('otf');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
