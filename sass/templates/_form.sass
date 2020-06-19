@@ -1,0 +1,20 @@
+.form
+  padding-bottom: 2000px
+  &__options
+    display: flex
+    justify-content: space-between
+    &__input
+      display: none
+      &:checked + label
+        border: 2px  solid red
+    &__label
+      display: flex 
+      flex-direction: column
+      &:checked
+        border: 2px solid red
+  &__question 
+    display: block
+  &__procent
+    display: none 
+    &--active 
+      display: inline-block 
