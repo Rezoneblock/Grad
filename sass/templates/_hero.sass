@@ -1,0 +1,98 @@
+.hero
+  padding-top: 50px
+  &__content 
+    display: flex 
+    max-height: 740px
+    box-shadow: 0px 0px 30px 10px rgba(220, 222, 237, 0.18)
+    border-radius: 10px
+  &__quiz 
+    width: 100%
+    background-color: $light
+    display: flex 
+    flex-direction: column
+    &__question 
+      padding-top: 65px
+      padding-left: 40px 
+  &__info 
+    min-width: 256px
+    background-color: #f7f7f7
+    overflow: hidden
+    border-top-left-radius: 10px
+    border-bottom-left-radius: 10px
+    &__gift 
+      display: flex 
+      flex-direction: column
+      margin-top: 98px
+      &__image 
+        margin-top: 45px
+      &__questions
+        margin-top: 10px
+        text-align: center
+        &__text 
+          font-family: 'Muller Light'
+          font-size: 28px 
+          color: #323232
+      &__title 
+        margin: 0 auto
+        max-width: 162px
+        text-align: center
+        &__text 
+          font-family: 'Muller Medium'
+          font-size: 16.5px 
+          line-height: 20px
+          color: #323232
+    &__description
+      padding-left: 26px
+      padding-top: 22px
+      &__price, &__tip
+        display: block
+        font-size: 14.5px 
+        line-height: 19px
+        font-family: 'Muller Light'
+        text-align: left 
+        max-width: 200px
+      &__tip 
+        margin-top: 6px
+        &--bold 
+          font-family: 'Muller Medium'
+    &__director 
+      width: 100%
+      position: relative
+      &__image 
+        width: 100%
+      &__name 
+        z-index: 10
+        position: absolute
+        top: 170px
+        left: 23px
+        display: flex 
+        align-items: center
+        justify-content: center
+        border-radius: 3px
+        background-color: #505050
+        width: 130px 
+        height: 36px
+        &__text 
+          color: $light 
+          font-family: 'Muller Medium'
+          font-size: 14.5px
+      &__position 
+        z-index: 5
+        position: absolute 
+        width: 180px 
+        height: 35px
+        top: 203px
+        left: 30px
+        display: flex 
+        align-items: center
+        justify-content: center
+        border-radius: 3px
+        background-color: $light 
+        &__text 
+          font-family: 'Muller Light'
+          color: #323232
+          font-size: 14px
+
+
+
+

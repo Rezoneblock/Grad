@@ -1,5 +1,6 @@
 .header
-  z-index: -1
+  position: relative
+  z-index: 20
   height: 830px
   background: url('../img/header-bg.png') center no-repeat
   &-bottom 
@@ -129,6 +130,10 @@
       left: 324px
       max-width: 350px
       font-size: 19px
+      &__image 
+        position: absolute
+        top: 55px
+        left: 200px
       &__text 
         font-family: 'Muller Light'
         &--bold 
@@ -303,6 +308,7 @@
             font-family: 'Muller Light'
             &--bold 
               font-family: 'Muller Medium'
+              text-decoration: none
         &-icon 
           display: flex 
           flex-direction: column
